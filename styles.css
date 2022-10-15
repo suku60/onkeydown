@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: brown;
+
+}
+
+.centeredContent {  
+    
+    display: grid;
+    place-items: center;
+
+}
+
+.indicator {
+    height: 4em;
+    width: 12em;
+
+    background-color: red;
+
+    color: black;
+
+}
+
+.indicator::before {
+    content: "your keyCode is:";
+}
+
+
+@media (max-width: 900px) {
+    .indicator {
+        width: 8em;
+    }
+}
