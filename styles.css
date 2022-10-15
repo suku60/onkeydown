@@ -53,7 +53,8 @@ body {
   height: 100px;
   border-radius: 150px;	
   box-shadow: 10px 10px rgba(0,0,0,0.2);
-  animation: move 3s infinite;
+  animation: cloudSize 18s infinite;
+
 }
 
 #cloud:after {
@@ -65,6 +66,7 @@ body {
   border-radius: 50%;
   top: -50px;
   left: 50px;
+  animation: cloudSize 15s infinite;
 }
 
 #cloud:before {
@@ -76,5 +78,26 @@ body {
   border-radius: 50%;
   top: -90px;
   right: 40px;
+  animation: cloudSize 13s infinite;
+
+}
+
+@keyframes cloudSize {
+    0%{
+    transform: scale(1);
+    }
+    25%{
+        transform: scale(1.05);
+        }
+    50%{
+        transform: scale(.95);
+        }
+        75%{
+        transform: scale(1.05);
+        }
+    100%{
+    transform: scale(1);
+        
+    }
 }
   
